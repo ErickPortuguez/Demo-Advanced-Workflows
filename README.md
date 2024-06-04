@@ -1,26 +1,12 @@
-# ErickPortuguez
- function myFunction() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
-  var header = "";
-  var detail = [];
-  var datosAEnviar = [];
+# Demo de Función de Suma
 
-  ss.getRange("A2:D4").getValues().forEach(v => {
-    header = v[0]
-  })
+Esta demo muestra una función simple de suma en JavaScript y cómo se puede probar utilizando Jest y mantener un código limpio y consistente con ESLint.
 
-  ss.getRange("A2:D4").getValues().forEach(v => {
-    if (v[0] == header) {
-      const data = {
-        pariente: v[1],
-        nombreM: v[2],
-        correo: v[3]
-      }
-      detail.push(data);
-    }
-  })
+## Función de Suma
 
-  const data = {
-    nombreA: header,
-    detalle: detail
-  }
+La función `sum` toma dos números como argumentos y devuelve su suma.
+
+```javascript
+function sum(a, b) {
+    return a + b;
+}
