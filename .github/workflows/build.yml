@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - Test-GitHubActions
+      - Test-unit
   pull_request:
     types: [opened, synchronize, reopened]
 
